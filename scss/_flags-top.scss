@@ -1,0 +1,101 @@
+.flags {
+	@include margin-width(85%);
+	display: grid;
+	grid-template: 1fr / 1fr 1fr 1fr;
+
+	&-in-1 {
+		display: flex;
+		justify-content: flex-start;
+		div {
+			@include flags-btn-setup();
+			padding: 0 4em 0 4em;
+		}
+	}
+
+	&-in-2 {
+		display: flex;
+		justify-content: center;
+		div {
+			@include flags-btn-setup();
+			padding: 0 1em 0 1em;
+		}
+	}
+
+	&-in-3 {
+		display: flex;
+		justify-content: flex-end;
+		div {
+			@include flags-btn-setup();
+			padding: 0 1em 0 1em;
+		}
+	}
+}
+
+// .flags {
+// 	@include margin-width(93%);
+// 	@include flex-options1;
+
+// 	background: yellowgreen;
+
+// 	&-in-2,
+// 	&-in-3 {
+// 		@include flex-options1;
+// 		div {
+// 			background-color: $light-color;
+// 			border-radius: $cut-borders;
+// 			padding: 0 1em 0 1em;
+// 			margin: 0 1px 0 1px;
+// 		}
+// 	}
+// 	&-in-1 {
+// 		flex: 1 1 auto;
+// 		background: yellow;
+// 		// width: calc(10em - 2px);
+// 		text-align: center;
+// 		#f1 {
+// 			background: $light-color;
+// 			border-radius: $cut-borders;
+// 			width: 100px;
+// 		}
+// 	}
+// 	&-in-2 {
+// 		background: red;
+// 		justify-content: center;
+// 		flex: 2 1 auto;
+// 	}
+// 	&-in-3 {
+// 		background: blue;
+// 		flex: 1 1 auto;
+// 		justify-content: flex-end;
+// 		text-align: center;
+// 	}
+// }
+
+// .flags {
+// 	@include margin-width(90%);
+// 	@include flex-options1;
+
+// 	&-in-2,
+// 	&-in-3 {
+// 		@include flex-options1;
+// 		div {
+// 			background-color: $light-color;
+// 			border-radius: $cut-borders;
+// 			padding: 0 1em 0 1em;
+// 			margin: 0 1px 0 1px;
+// 		}
+
+// 		#f8,
+// 		#f9 {
+// 			width: calc(5em - 2px);
+// 			text-align: center;
+// 		}
+// 	}
+
+// 	#f1 {
+// 		background: $light-color;
+// 		border-radius: $cut-borders;
+// 		width: calc(10em - 2px);
+// 		text-align: center;
+// 	}
+// }

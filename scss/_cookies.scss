@@ -1,0 +1,34 @@
+.cookies-section {
+	@include margin-width(93%);
+	background: lighten($background-color, 10%);
+	border-radius: $cut-borders;
+	height: 15%;
+	display: flex;
+
+	p {
+		display: flex;
+		align-items: center;
+		width: 70%;
+		padding: 5px 100px 5px 100px;
+		color: $light-color;
+	}
+
+	button {
+		background: $grid-layout-secondary-color;
+		border-radius: $cut-borders;
+		color: $grid-layout-color;
+		cursor: pointer;
+		border-style: none;
+		align-self: flex-end;
+		width: 10%;
+		margin-left: 7.5%;
+		margin-bottom: 5px;
+		padding: 2px 0 2px 0;
+	}
+}
+
+// footer {
+// 	background-color: red;
+// 	width: 100px;
+// 	height: 50%;
+// }

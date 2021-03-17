@@ -1,0 +1,27 @@
+.second-section {
+	height: 4%;
+	@include margin-width(90%);
+	@include flex-options2(center, space-around);
+
+	button {
+		border-radius: $cut-borders;
+		color: $light-color;
+		background: none;
+		border-style: none;
+		cursor: pointer;
+		width: 130px;
+		padding: 4.5px 10px 4.5px 10px;
+		animation-name: button-unhover;
+		animation-duration: 1s;
+
+		&:hover {
+			animation-name: button-hover;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+		}
+
+		&:active {
+			color: $grid-layout-secondary-color;
+		}
+	}
+}

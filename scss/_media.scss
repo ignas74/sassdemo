@@ -1,0 +1,41 @@
+/* -------- IPHONE X / IPHONE 6 7 8 PLUS ------ */
+@media screen and (max-width: 375px), (max-width: 414px) {
+	.flags {
+		&-in-1 {
+			div {
+				padding: 0 2em 0 2em;
+			}
+		}
+		&-in-2,
+		&-in-3 {
+			div {
+				padding: 0 0.5em 0 0.5em;
+			}
+		}
+	}
+
+	.first-section {
+		font-size: 10px;
+	}
+
+	.cookies-section {
+		p {
+			padding: 1em;
+			font-size: 12px;
+		}
+		button {
+			align-self: center;
+			margin: auto;
+			width: 20%;
+			padding: 3%;
+		}
+	}
+
+	.second-section {
+		button {
+			font-size: 11px;
+			padding: 2px;
+			width: 100px;
+		}
+	}
+}

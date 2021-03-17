@@ -1,0 +1,34 @@
+.first-section {
+	background-color: lighten($background-color, 10%);
+	border-radius: $cut-borders;
+	@include margin-width(93%);
+	height: 75%;
+	padding: 7.5px;
+
+	display: grid;
+	grid-template: 7% repeat(8, 11.6%) / repeat(9, 11.12%);
+
+	#i2 {
+		grid-area: 1 / 2 / 3 / 9;
+	}
+	#i18 {
+		grid-area: 4 / 4 / 7 / 7;
+	}
+	#i44 {
+		grid-area: 8 / 2 / 8 / 9;
+	}
+
+	& div {
+		background: $grid-layout-color;
+		border-radius: $cut-borders;
+		margin: 2px;
+		animation-name: first-button-unhover;
+		animation-duration: 1.5s;
+
+		&:hover {
+			animation-name: first-button-hover;
+			animation-duration: 1.5s;
+			animation-fill-mode: forwards;
+		}
+	}
+}

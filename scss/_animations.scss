@@ -1,0 +1,36 @@
+@keyframes first-button-hover {
+	0% {
+		background: $grid-layout-color;
+	}
+	100% {
+		background: $grid-layout-secondary-color;
+	}
+}
+@keyframes first-button-unhover {
+	0% {
+		background: $grid-layout-secondary-color;
+	}
+	60% {
+		background: $grid-layout-secondary-color;
+	}
+	100% {
+		background: $grid-layout-color;
+	}
+}
+
+@keyframes button-hover {
+	0% {
+		background: none;
+	}
+	100% {
+		background: $grid-layout-secondary-color;
+	}
+}
+@keyframes button-unhover {
+	0% {
+		background: $grid-layout-secondary-color;
+	}
+	100% {
+		background: none;
+	}
+}

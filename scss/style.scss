@@ -1,0 +1,19 @@
+@import "config", "flags-top", "first-section", "animations", "bot-buttons",
+  "cookies", "media";
+
+* {
+  font-family: $font-family;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  body {
+    border: 1px solid $grid-layout-secondary-color;
+    background-color: $background-color;
+    ::selection {
+      background: $grid-layout-secondary-color;
+    }
+    // height: calc(100vh - 3px - 1px - 3px);
+    height: 100vh;
+  }
+}
